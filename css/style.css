@@ -131,6 +131,26 @@ input[type="submit"] {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     padding: 7px;
+    cursor: pointer;
+}
+
+.obligatoire {
+    color: red;
+}
+
+.notification {
+    margin-top: 5px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-style: italic;
+}
+
+.validation {
+    margin-top: 5px;
+    color: red;
+    font-style: italic;
 }
 
 

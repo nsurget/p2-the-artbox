@@ -1,4 +1,12 @@
-<?php require 'helper.php'; ?>
+<?php 
+session_start();
+require 'helper.php'; 
+
+if (!empty($_SESSION['notification'])) {
+    $notification = $_SESSION['notification'];
+    unset($_SESSION['notification']);
+}
+?>
 
 <!doctype html>
 <html lang="fr">
@@ -21,3 +29,6 @@
     </nav>
 </header>
 <main>
+<?php if (!empty($notification)) : ?>
+    <div class="notification"><?= $notification ?></div>
+<?php endif; ?>

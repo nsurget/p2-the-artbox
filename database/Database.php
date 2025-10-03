@@ -8,7 +8,7 @@ class Database {
         $this->config = $config;
     }
 
-    public function getConnection() {
+    public function getConnection(): PDO {
         if ($this->pdo === null) {
             try {
                 $this->pdo = new PDO(

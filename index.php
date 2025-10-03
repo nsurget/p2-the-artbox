@@ -1,7 +1,7 @@
 <?php
     require 'header.php';
    
-    require 'database/Database.php';
+    require_once 'database/Database.php';
     $database = new Database();
     $connection = $database->getConnection();
     $oeuvres = $connection->query('SELECT * FROM oeuvres')->fetchAll();
