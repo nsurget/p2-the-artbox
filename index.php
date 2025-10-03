@@ -1,6 +1,11 @@
 <?php
     require 'header.php';
     require 'oeuvres.php';
+    require 'database/Database.php';
+    require 'helper.php';
+    
+    
+    
 ?>
 <div id="liste-oeuvres">
     <?php foreach($oeuvres as $oeuvre): ?>
