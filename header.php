@@ -1,3 +1,5 @@
+<?php require 'helper.php'; ?>
+
 <!doctype html>
 <html lang="fr">
 <head>

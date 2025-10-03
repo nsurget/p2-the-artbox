@@ -1,10 +1,10 @@
 <?php
     require 'header.php';
-    require 'oeuvres.php';
+   
     require 'database/Database.php';
-    require 'helper.php';
-    
-    
+    $database = new Database();
+    $connection = $database->getConnection();
+    $oeuvres = $connection->query('SELECT * FROM oeuvres')->fetchAll();
     
 ?>
 <div id="liste-oeuvres">
